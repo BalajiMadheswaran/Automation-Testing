@@ -1,0 +1,30 @@
+package Introcution;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+//import org.openqa.selenium.edge.EdgeDriver;
+
+public class SelIntro {
+
+	public static void main(String[] args) {
+		
+		//Invoking browser
+		//Chrome Browser -> ChromeDriver
+		System.setProperty("webdrive.chrome.driver", "C:\\Users\\balaj\\Documents\\chromedriver.exe");
+		WebDriver driver=new ChromeDriver();
+		
+		
+		//Invoking Edge driver 
+//		System.setProperty("webdrive.edge.driver", "C:\\Users\\balaj\\Documents\\msedgedriver.exe");
+//		WebDriver driver=new EdgeDriver();
+		
+		
+		driver.get("https://www.google.com/");
+		System.out.println(driver.getTitle());
+		System.out.println(driver.getCurrentUrl());
+		driver.close();
+	
+
+	}
+
+}
