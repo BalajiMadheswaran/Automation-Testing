@@ -1,0 +1,39 @@
+package Java_Basics;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+public class Java_Basics {
+
+	public static void main(String[] args) {
+//		Array List
+		ArrayList<String> a = new ArrayList<String>();
+		a.add("Balaji");
+		a.add("Madheswaran");
+		a.add("Indirani");
+		for(int i=0;i<a.size();i++) {
+			System.out.println(a.get(i));
+		}
+
+		System.out.println("enchanced method ");
+		
+//		Enhanced for loop
+		for(String s : a) {
+			System.out.println(s);
+			
+		}
+//		Contains method to check a presence of word in array list
+		if(a.contains("Balaji")) {
+			System.out.println("Yes! The array contains " +a.get(2));
+		}
+//		converting normal(static) array to array list(dynamic)
+		String[] b= {"Degrs", "Gwtdvw","eicnwx","wixnw"};
+		
+		List<String> b1=Arrays.asList(b);
+		
+		System.out.println(b1.get(1));
+		
+	}
+
+}
